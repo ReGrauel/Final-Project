@@ -32,14 +32,16 @@ body {
 
 
 header {
-    width: 910px;	/* reduced by 20px to accommodate shadow */
-    margin-bottom: 30px;
+    background-color: rgb(0, 32, 45);
+	border: 1px solid #888888;
+	border-radius: 25px;
+    box-shadow: 15px 15px 5px 0 rgba(225, 249, 255, 65%); 
+	margin-bottom: 30px;
     margin-top: 10px;
-    text-align: center;
-    border: 1px solid #888888;
-    box-shadow: 15px 15px 5px 0 #888888;
-    border-radius: 25px;  	
+	text-align: center;
+	width: 910px;	/* reduced by 20px to accommodate shadow */	
 }
+
 
 nav {
 	width: 200px;
@@ -87,7 +89,13 @@ figure{
 }
 
 figcaption {
-    font-style: italic;
+    font-family: 'FantaisieArtistique', sans-serif;
+	font-style: normal;
+	font-size: 4em;
+}
+
+@font-face{
+	src: url('https://fonts.cdnfonts.com/css/fantaisie-artistique');
 }
 
 aside {
@@ -114,17 +122,18 @@ h3 {
     padding-top: 0.5em;
 }
 
+
 footer {
-    width: 910px;
-    margin: 0;
-    padding: 10px;
     background-color: rgb(0, 32, 45);
-    clear: both;
-    color: rgb(225, 249, 255);
-    font-weight: bold;
-    text-align: center;
-	border-bottom-left-radius: 25px;
+    border-bottom-left-radius: 25px;
 	border-bottom-right-radius: 25px;
+	clear: both;
+    color: rgba(225, 249, 255, 70%);
+    font-weight: bold;
+	margin: 0;
+    padding: 10px;
+    text-align: center;
+	width: 910px;
 }
 
 #wrapper {
@@ -136,15 +145,16 @@ footer {
 /* navigation for footer */
 
 footer a:link {
-    color: rgb(225, 249, 255);
+    color: rgba(225, 249, 255, 70%);
     text-decoration: none;
 }
 
 footer a:visited {
-    color: rgba(225, 249, 255, 0.5);
+    color: rgb(225, 249, 255);
     text-decoration: none;
 }
 
 footer a:hover {
     text-decoration: underline;
 }
+
