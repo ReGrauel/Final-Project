@@ -3,7 +3,7 @@
    sample start file for final project - educational use only
    
    Author:   Reanna Grauel
-   Date:     4/1/24
+   Date:     4/22/24
    
   
 
@@ -42,6 +42,15 @@ header {
 	width: 910px;	/* reduced by 20px to accommodate shadow */	
 }
 
+table, th, td {
+  border: 1px solid;
+  padding: 2px;
+}
+
+video {
+  width: 100%;
+  height: auto;
+}
 
 nav {
 	width: 200px;
@@ -158,3 +167,22 @@ footer a:hover {
     text-decoration: underline;
 }
 
+input[type=text], select, textarea {
+	width: 100%;
+	padding: 12px; 
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
+	margin-top: 6px;
+	margin-bottom: 5px;
+	resize: vertical
+}
+ 
+input[type=submit] {
+	background-color: rgb(0, 32, 45);
+	color: rgb(225, 249, 255);
+	padding: 6px 10px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+}
